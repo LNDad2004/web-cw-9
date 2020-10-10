@@ -1,9 +1,27 @@
 // 1
 // moon.jpg قم بالوصول إلى الصورة وتغيرها إلى
-
+//  document.getElementById("image")
+//  image.src = "./images/moon.jpg"
+ 
 // 2
 // "قم بالوصول إلى كلمة الأرض وتحويلها إلى "القمر
+let image = document.getElementById("image")
+let title = document.getElementById("caption")
+let body = document.body
+    function changer() {
+        if (title.innerHTML == "الشمس") {
+        image.src = "./images/moon.jpg"
+            body.style.backgroundColor = "darkblue"
+    title.innerHTML = "القمر"
+    } else {
 
+
+       
+        image.src = "./images/sun.jpg"
+        body.style.backgroundColor = "orange"
+    title.innerHTML = "الشمس"
+    }
+}
 // 3
 // بحيث إن ضغطت على البطاقة تتغير الصورة للصورة الأخرى ويتغير الاسم onClick قم بإنشاء دالة واستخدام خاصية
 // دون الحاجة إلى الخطوتين 2و1
